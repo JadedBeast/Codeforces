@@ -13,13 +13,13 @@ created : 5/3/2019
 #include <bits/stdc++.h>
 
 using namespace std;
-inline void Boost() {
+inline void JadedBeast() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
 }
 
 int main(void){
-    Boost();
+    JadedBeast();
     int k2,k3,k5,k6;
     cin >> k2 >>k3 >>k5 >>k6;
 
