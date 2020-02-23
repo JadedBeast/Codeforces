@@ -6,42 +6,40 @@ Copyright (C)          JadedBeast
 
                                    Morocco
 
-created : 22/3/2019
+created : 08/11/2019
 
 */
 
 #include <bits/stdc++.h>
 
 using namespace std;
-#define time cout << "\ntime: " << (long long)clock() * 1000 / CLOCKS_PER_SEC << " ms" << endl;
-const int mod= 1e9+7;
-
-
-
+#define oo 1e17
+#define ll long long 
+#define debug(x) cout<<"Mayday Mayday : "<<(x)<<endl;
+#define debugg(x) cout<<"-----Mayday Mayday : "<<(x)<<endl;
 inline void JadedBeast() {
     ios::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
 }
+const int MAX =1e6+1;
 
-
-
-
-int main(void) {
+int main() {
     JadedBeast();
-    int n,l,r,left1=0,left0=0,right1=0,right0=0;
-    cin >> n ;
-    for (int i= 0 ;i <n ;i++){
-        cin >>l >> r;
-        if(l)
-            left1++;
-        else
-            left0++;
-        if(r)
-            right1++;
-        else
-            right0++;
+    string s;
+    cin >> s;
+    int ans=0;
+    for(int i=0;s[i];i++)
+    	if(s[i]=='0'){
+    		ans=i;
+    		break;
+    	}
+
+    for(int i=0;s[i] ;i++){
+    	if(i!=ans)
+    		cout<<s[i];
     }
-    cout << min(left0,left1)+min(right0,right1)<< endl;
 
     return 0;
+    	
+        
 }
